@@ -1,17 +1,32 @@
 package com.bnr.backend.service;
 
-import com.bnr.backend.entity.DiaryEntry;
+import com.bnr.backend.domain.Author;
+import com.bnr.backend.domain.DiaryEntry;
+import com.bnr.backend.repository.DiaryEntryRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
 import java.util.List;
 
 
 @Service
 public class DiaryService {
 
+    private final DiaryEntryRepository diaryEntryRepository;
+
+    public DiaryService(DiaryEntryRepository diaryEntryRepository){
+        this.diaryEntryRepository = diaryEntryRepository;
+    }
+
     public List<DiaryEntry> getAllPosts(){
-        return Arrays.asList(new DiaryEntry(1L, 1L, "title1", "description1"), new DiaryEntry(2L, 1L, "title2", "description2"));
+        return diaryEntryRepository.findAll();
+    }
+
+    public void saveDiaryEntry(Author author, String title, String body){
+        DiaryEntry de = new DiaryEntry();
+        de.setBody(body);
+        de.setTitle(title);
+        de.setAuthor(author);
+        diaryEntryRepository.save(de);
     }
 
 }
