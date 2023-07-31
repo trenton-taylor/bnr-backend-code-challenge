@@ -12,7 +12,7 @@
     <artifactId>ranch-hand-diary</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Diary of a Ranch Hand</name>
-    <description>Thoughts, poems, and inspirations from someone on the front lines of the Big Nerd Ranch</description>
+    <description>Thoughts, poems, and inspirations from someone on the front lines of the Big Nerd Ranch!</description>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
