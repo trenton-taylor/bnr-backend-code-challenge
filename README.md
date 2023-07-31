@@ -13,7 +13,6 @@ Please create an application implementing a CRUD web service for `posts` using t
 
 If you have extra time, we'd love to see what you create around any of the topics below:
 
-- Authentication (Basic, OAuth2, JWT)
 - Utilize a database for persistent storage (Feel free to choose an engine of your choice)
 
 When you are done, zip up the project and return it to your Big Nerd Ranch contact.
@@ -24,6 +23,11 @@ Below, you'll find some sample data to help structure your models and seed your 
 
 ### Posts
 
+![img.png](img/img.png)
+
+![img_1.png](img/img_1.png)
+
+![img.png](img/img_3.png)
 ```
 [
   {

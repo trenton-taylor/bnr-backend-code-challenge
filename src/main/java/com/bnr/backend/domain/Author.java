@@ -15,6 +15,7 @@ import lombok.Setter;
 public class Author {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     public Long id;
     public String name;
     public String email;
