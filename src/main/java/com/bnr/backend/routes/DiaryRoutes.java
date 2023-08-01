@@ -32,7 +32,7 @@ public class DiaryRoutes {
     }
 
     @GetMapping("entry/{id}")
-    public DiaryEntry getDiaryEntry(@PathParam("id") Long id){
+    public DiaryEntry getDiaryEntry(@PathVariable("id") Long id){
         return diaryService.getDiaryEntry(id);
     }
 
